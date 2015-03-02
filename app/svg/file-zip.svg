@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="-404 282.3 32 32" enable-background="new -404 282.3 32 32" xml:space="preserve">
+<g>
+	<path fill="#EDD87E" d="M-374,312.3c0,1.1-0.9,2-2,2h-24c-1.1,0-2-0.9-2-2v-28c0-1.1,0.9-2,2-2h24c1.1,0,2,0.9,2,2V312.3z"/>
+	<g opacity="0.15">
+		<polygon points="-386,289.3 -388,291.3 -386,291.3 		"/>
+		<rect x="-390" y="291.3" width="2" height="2"/>
+		<rect x="-388" y="293.3" width="2" height="2"/>
+		<rect x="-390" y="295.3" width="2" height="2"/>
+	</g>
+	<path fill="#FFFFFF" d="M-385,297.3h-6c-0.6,0-1,0.4-1,1v11c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1v-11
+		C-384,297.7-384.4,297.3-385,297.3z M-386,308.3h-4v-4h4V308.3z"/>
+	<g opacity="0.2">
+		<rect x="-390" y="304.3" width="4" height="1"/>
+		<path d="M-385,310.3h-6c-0.6,0-1-0.4-1-1v1c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1v-1C-384,309.8-384.4,310.3-385,310.3z"/>
+	</g>
+	<polygon fill="#6F8388" points="-379,282.3 -388,291.3 -397,282.3 	"/>
+</g>
+</svg>
