@@ -57,14 +57,14 @@ Secure environment:
 4. Include the shortcode **[clinked_portal]** in the desired page.
 5. If you don't already have an account visit our website and [sign up][clinked packages] for a free trial.
 
-[clinked packages] http://clinked.com/packages "Sign up to Clinked"
+[clinked packages](http://clinked.com/packages) "Sign up to Clinked"
 
 == Screenshots ==
 
-1. screenshot-activity.png
-2. screenshot-chat.png
-3. screenshot-files.png
-4. screenshot-tasks.png
+1. Screenshot Of Clinked Activity Stream
+2. Screenshot Of Clinked Group Chat
+3. Screenshot Of Clinked File Sharing
+4. screenshot Of Clinked Task Management
 
 == Changelog ==
 
