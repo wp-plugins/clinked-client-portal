@@ -3,7 +3,7 @@ Contributors: clinked
 Tags: client portal, customer portal, client portal software, white-label file sharing, collaboration tool, online project management, task management software, project management tool, online project management software, share files, share large files, secure file sharing, file sharing site, online file sharing, file transfer, collaborate, collaboration site, online collaboration, ftp alternative, ftp replacement, send large files, web collaboration, team workspace, extranet, team collaboration, send large files, share files online, file sharing
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,17 +61,25 @@ Secure environment:
 
 == Screenshots ==
 
-1. /assets/screenshot-activity.png
-2. /assets/screenshot-chat.png
-3. /assets/screenshot-files.png
-4. /assets/screenshot-tasks.png
+1. screenshot-activity.png
+2. screenshot-chat.png
+3. screenshot-files.png
+4. screenshot-tasks.png
 
 == Changelog ==
+
+= 1.1 =
+* Fixed Search.
+* Improved Look and Feel.
+* Various minor bugfixes.
 
 = 1.0 =
 * The first version.
 
 == Upgrade Notice ==
+
+= 1.1 =
+This upgrade includes a fix for global search.
 
 = 1.0 =
 1st Version. No upgrade notice necessary.
