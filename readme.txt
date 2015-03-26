@@ -11,7 +11,7 @@ The Clinked Client Portal plugin is a great addition to the popular Clinked appl
 
 == Description ==
 
-** Clinked - Free Client Portal, File Sharing & Communication App **
+#### Clinked - Free Client Portal, File Sharing & Communication App
 
 Clinked is simple and secure client communication and collaboration tool which integrates with your website using a simple widget. 
 You can manage, share and discuss content for your projects & teams, while keeping track on activities and timelines.
