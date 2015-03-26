@@ -21,7 +21,7 @@ You can start collaborating, sharing files, organizing tasks & events within min
 
 It is free for 3 users and you can downgrade/upgrade cancel anytime. See our pricing at https://clinked.com/packages/
 
-** Benefits: **
+#### Benefits:
 
 * Share files in your own branded client portal
 * Easy to use - Set-up in minutes
@@ -30,7 +30,7 @@ It is free for 3 users and you can downgrade/upgrade cancel anytime. See our pri
 * Secure - Bank grade security
 * Free for 3 users and cost effective paid packages - No set up costs, only pay per user after 3 users
 
-** Easy File Sharing **
+#### Easy File Sharing
 
 * Store files in folder structures, including [Google files](https://clinked.com/google-apps)
 * [View files and videos](https://clinked.com/instant-file-viewing) instantaneously without downloading the files first
@@ -40,7 +40,7 @@ It is free for 3 users and you can downgrade/upgrade cancel anytime. See our pri
 * [File version control](https://clinked.com/version-control) enables you to access and restore previous versions of documents
 * Sync your documents across all your devices using [SmartSync Desktop app](https://clinked.com/smartsync)
 
-** Manage projects: **
+#### Manage projects:
 
 * [Activity dashboard](https://clinked.com/activity-stream) on individual project/group and account levels
 * Task management, incl assigning, status, approval
@@ -50,7 +50,7 @@ It is free for 3 users and you can downgrade/upgrade cancel anytime. See our pri
 * Quick way to create & share content
 * Easy to use
 
-** Collaborative features: **
+#### Collaborative features:
 
 * Real-time [Group Chat](https://clinked.com/group-chat)
 * Notes (Wiki — online editor)
@@ -63,7 +63,7 @@ It is free for 3 users and you can downgrade/upgrade cancel anytime. See our pri
 * [@mention messaging](https://clinked.com/mention-messaging)
 * [Tag Cloud](https://clinked.com/tagging-tag-clouds/)
 
-** Secure environment: **
+#### Secure environment:
 
 * 256 bit SSL in transit & AES encryption at rest
 * FISMA and FIPs certified
