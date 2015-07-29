@@ -11,9 +11,24 @@ License: GPLv2
 
 function shortcode_handler($atts) {
 
+	$data = 'data-appurl="' . plugin_dir_url(__FILE__) . 'app"';
+
+	if (isset($atts['logo']))
+		$data = $data . ' data-logo="' . $atts['logo'] . '"';
+
+	if (isset($atts['wallpaper']))
+		$data = $data . ' data-wallpaper="' . $atts['wallpaper'] . '"';
+
+	wp_register_style('clinked-portal-style', plugin_dir_url(__FILE__).'app/styles/clinked-portal.css');
+	wp_enqueue_style('clinked-portal-style');
+	wp_enqueue_script('json2');
+	wp_enqueue_script('jquery');
+	wp_register_script('clinked-portal-script', plugin_dir_url(__FILE__).'app/clinked-portal.js');
+	wp_enqueue_script('clinked-portal-script');
+
 	ob_start();
 	?>
-		<div id="clinked-portal" data-appurl="<?= plugin_dir_url(__FILE__); ?>app">
+		<div id="clinked-portal" <?= $data; ?> >
 		    <div class="header marginal hidden">
 				<span class="left"></span>
 				<span class="right"></span>
@@ -26,6 +41,7 @@ function shortcode_handler($atts) {
 				<a href="#" class="notifications hidden">
 					<span class="badge"></span>
 				</a>
+				<div class='refresh'><!-- TODO move to native --></div>
 				<div class='view'></div>
 			</div>
 			<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
@@ -47,20 +63,6 @@ function shortcode_handler($atts) {
 	return ob_get_clean();
 }
 
-function enqueue_scripts_handler() {
-
-	wp_register_style('clinked-portal-style', plugin_dir_url(__FILE__).'app/styles/clinked-portal.css');
-	wp_enqueue_style('clinked-portal-style');
-	wp_enqueue_script('json2');
-	wp_enqueue_script('jquery');
-#	TODO the documentation says these are available - but they don't seem to be
-#	wp_enqueue_script('underscore');
-#	wp_enqueue_script('backbone');
-	wp_register_script('clinked-portal-script', plugin_dir_url(__FILE__).'app/clinked-portal.js');
-	wp_enqueue_script('clinked-portal-script');
-}
-
-add_action('wp_enqueue_scripts', 'enqueue_scripts_handler');
 add_shortcode('clinked_portal', 'shortcode_handler');
 
 ?>
