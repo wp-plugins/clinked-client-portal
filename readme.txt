@@ -90,6 +90,10 @@ It is free for 3 users and you can downgrade/upgrade cancel anytime. See our pri
 
 == Changelog ==
 
+= 1.2 =
+* Custom branding feature.
+* Fixed microblogging bug.
+
 = 1.1 =
 * Fixed Search.
 * Improved Look and Feel.
@@ -99,6 +103,9 @@ It is free for 3 users and you can downgrade/upgrade cancel anytime. See our pri
 * The first version.
 
 == Upgrade Notice ==
+
+= 1.2 =
+This upgrade allows for custom branding.
 
 = 1.1 =
 This upgrade includes a fix for global search.
