@@ -3,7 +3,7 @@ Contributors: clinked
 Tags: client portal, customer portal, client portal software, white-label file sharing, collaboration tool, online project management, task management software, project management tool, online project management software, share files, share large files, secure file sharing, file sharing site, online file sharing, file transfer, collaborate, collaboration site, online collaboration, ftp alternative, ftp replacement, send large files, web collaboration, team workspace, extranet, team collaboration, send large files, share files online, file sharing
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,6 +74,9 @@ It is free for 3 users and you can downgrade/upgrade cancel anytime. See our pri
 2. Search for 'Clinked Client Portal'
 3. Activate Clinked Client Portal from your Plugins page.
 4. Include the shortcode **[clinked_portal]** in the desired page.
+..* You can customise the shortcode in the following ways:
+..* Add your own company logo to the landing page by using this shortcode parameter: **[clinked_portal logo="logo image url"]**
+..* Change the landing page wallpaper using this shortcode parameter: **[clinked_portal wallpaper="wallpaper image url"]**
 5. If you don't already have an account visit our website and [clinked packages](http://clinked.com/packages) for a free trial.
 
 "Sign up to Clinked"

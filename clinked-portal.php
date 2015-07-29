@@ -11,6 +11,14 @@ License: GPLv2
 
 function shortcode_handler($atts) {
 
+	$data = 'data-appurl="' . plugin_dir_url(__FILE__) . 'app"';
+
+	if (isset($atts['logo']))
+		$data = $data . ' data-logo="' . $atts['logo'] . '"';
+
+	if (isset($atts['wallpaper']))
+		$data = $data . ' data-wallpaper="' . $atts['wallpaper'] . '"';
+
 	wp_register_style('clinked-portal-style', plugin_dir_url(__FILE__).'app/styles/clinked-portal.css');
 	wp_enqueue_style('clinked-portal-style');
 	wp_enqueue_script('json2');
@@ -20,7 +28,7 @@ function shortcode_handler($atts) {
 
 	ob_start();
 	?>
-		<div id="clinked-portal" data-appurl="<?= plugin_dir_url(__FILE__); ?>app">
+		<div id="clinked-portal" <?= $data; ?> >
 		    <div class="header marginal hidden">
 				<span class="left"></span>
 				<span class="right"></span>
