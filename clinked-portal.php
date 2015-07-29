@@ -4,16 +4,31 @@ Plugin Name: Clinked Client Portal
 Plugin URI: http://clinked.com/client-area
 Description: The Clinked Client Portal plugin is a great addition to the popular <a href="http://clinked.com">Clinked application</a> - a branded, feature rich client portal. Using the plugin couldn't be easier. Simply include the shortcode <strong>[clinked_portal]</strong> in the desired page and you're done. If you don't already have an account visit our website and <a href="http://clinked.com/packages">sign up</a> for a free trial.
 Author: Clinked
-Version: 1.0
+Version: 1.3
 Author URI: http://clinked.com
 License: GPLv2
 */
 
 function shortcode_handler($atts) {
 
+	$data = 'data-appurl="' . plugin_dir_url(__FILE__) . 'app"';
+
+	if (isset($atts['logo']))
+		$data = $data . ' data-logo="' . $atts['logo'] . '"';
+
+	if (isset($atts['wallpaper']))
+		$data = $data . ' data-wallpaper="' . $atts['wallpaper'] . '"';
+
+	wp_register_style('clinked-portal-style', plugin_dir_url(__FILE__).'app/styles/clinked-portal.css');
+	wp_enqueue_style('clinked-portal-style');
+	wp_enqueue_script('json2');
+	wp_enqueue_script('jquery');
+	wp_register_script('clinked-portal-script', plugin_dir_url(__FILE__).'app/clinked-portal.js');
+	wp_enqueue_script('clinked-portal-script');
+
 	ob_start();
 	?>
-		<div id="clinked-portal" data-appurl="<?= plugin_dir_url(__FILE__); ?>app">
+		<div id="clinked-portal" <?= $data; ?> >
 		    <div class="header marginal hidden">
 				<span class="left"></span>
 				<span class="right"></span>
@@ -26,6 +41,7 @@ function shortcode_handler($atts) {
 				<a href="#" class="notifications hidden">
 					<span class="badge"></span>
 				</a>
+				<div class='refresh'><!-- TODO move to native --></div>
 				<div class='view'></div>
 			</div>
 			<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
@@ -47,20 +63,6 @@ function shortcode_handler($atts) {
 	return ob_get_clean();
 }
 
-function enqueue_scripts_handler() {
-
-	wp_register_style('clinked-portal-style', plugin_dir_url(__FILE__).'app/styles/clinked-portal.css');
-	wp_enqueue_style('clinked-portal-style');
-	wp_enqueue_script('json2');
-	wp_enqueue_script('jquery');
-#	TODO the documentation says these are available - but they don't seem to be
-#	wp_enqueue_script('underscore');
-#	wp_enqueue_script('backbone');
-	wp_register_script('clinked-portal-script', plugin_dir_url(__FILE__).'app/clinked-portal.js');
-	wp_enqueue_script('clinked-portal-script');
-}
-
-add_action('wp_enqueue_scripts', 'enqueue_scripts_handler');
 add_shortcode('clinked_portal', 'shortcode_handler');
 
 ?>
