@@ -4,7 +4,7 @@ Plugin Name: Clinked Client Portal
 Plugin URI: http://clinked.com/client-area
 Description: The Clinked Client Portal plugin is a great addition to the popular <a href="http://clinked.com">Clinked application</a> - a branded, feature rich client portal. Using the plugin couldn't be easier. Simply include the shortcode <strong>[clinked_portal]</strong> in the desired page and you're done. If you don't already have an account visit our website and <a href="http://clinked.com/packages">sign up</a> for a free trial.
 Author: Clinked
-Version: 1.0
+Version: 1.3
 Author URI: http://clinked.com
 License: GPLv2
 */
